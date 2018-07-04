@@ -6,25 +6,25 @@ namespace WarpSystem
 {
 	class QuantumReactor
 	{
-		bool		_stability;
+		bool _stability;
 
 	public:
 	QuantumReactor();
 	~QuantumReactor();
 
-	bool		isStable();
-	void		setStability(bool);
-  };
+	bool isStable();
+	void setStability(bool);
+    };
 
 	class Core
 	{
 	QuantumReactor	*_coreReactor;
 
-  public:
+  	public:
 		Core(QuantumReactor *);
 		~Core();
 
-	QuantumReactor	*checkReactor();
-  };
+	QuantumReactor *checkReactor();
+    };
 }
 #endif

@@ -2,6 +2,7 @@
 #define FEDERATION_H_
 #include <string>
 #include "Warpsystem.hh"
+using namespace std;
 
 namespace Federation
 {
@@ -11,14 +12,14 @@ namespace Federation
 		{
 			int _length;
 			int _width;
-			std::string _name;
+			string _name;
 			short _maxWarp;
-			WarpSystem::Core	*core;
+			WarpSystem::Core *core;
 			public:
-			Ship(int length, int width, std::string name, short maxWarp);
+			Ship(int length, int width, string name, short maxWarp);
 			~Ship();
-			void		setupCore(WarpSystem::Core *core);
-			void		checkCore();
+			void setupCore(WarpSystem::Core *core);
+			void checkCore();
 		};
 	}
 
@@ -26,16 +27,16 @@ namespace Federation
 	{
 		int _length;
 		int _width;
-		std::string _name;
+		string _name;
 		short _maxWarp;
 		WarpSystem::Core *core;
 
 		public:
-		Ship(int length, int width, std::string name);
+		Ship(int length, int width, string name);
 		~Ship();
 
-		void		setupCore(WarpSystem::Core *core);
-		void		checkCore();
+		void setupCore(WarpSystem::Core *core);
+		void checkCore();
 	};
 }
 #endif
